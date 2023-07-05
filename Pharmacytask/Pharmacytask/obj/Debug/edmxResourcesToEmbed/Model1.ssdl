@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PharmacytaskModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Categ_supp">
+    <Key>
+      <PropertyRef Name="S_id" />
+      <PropertyRef Name="Ca_id" />
+    </Key>
+    <Property Name="S_id" Type="int" Nullable="false" />
+    <Property Name="Ca_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Ca_id" />
+    </Key>
+    <Property Name="Ca_id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Userid" Type="int" />
+    <Property Name="P_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Cus_Category">
+    <Key>
+      <PropertyRef Name="Ca_id" />
+      <PropertyRef Name="Cus_id" />
+    </Key>
+    <Property Name="Ca_id" Type="int" Nullable="false" />
+    <Property Name="Cus_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cust_product">
+    <Key>
+      <PropertyRef Name="Cus_id" />
+      <PropertyRef Name="P_id" />
+    </Key>
+    <Property Name="Cus_id" Type="int" Nullable="false" />
+    <Property Name="P_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cust_User">
+    <Key>
+      <PropertyRef Name="Cus_id" />
+      <PropertyRef Name="Userid" />
+    </Key>
+    <Property Name="Cus_id" Type="int" Nullable="false" />
+    <Property Name="Userid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Cus_id" />
+    </Key>
+    <Property Name="Cus_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="int" />
+    <Property Name="age" Type="int" />
+    <Property Name="Company" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="Userid" Type="int" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="prod_supp">
+    <Key>
+      <PropertyRef Name="P_id" />
+      <PropertyRef Name="S_id" />
+    </Key>
+    <Property Name="P_id" Type="int" Nullable="false" />
+    <Property Name="S_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="P_id" />
+    </Key>
+    <Property Name="P_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="ParCode" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Quantity" Type="bigint" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="Userid" Type="int" />
+    <Property Name="Ca_id" Type="int" />
+  </EntityType>
+  <EntityType Name="suppAddress">
+    <Key>
+      <PropertyRef Name="S_id" />
+      <PropertyRef Name="Address" />
+    </Key>
+    <Property Name="S_id" Type="int" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="S_id" />
+    </Key>
+    <Property Name="S_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyName" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="User_id" Type="int" />
+    <Property Name="Phone" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Userid" />
+    </Key>
+    <Property Name="Userid" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="PassWord" Type="int" />
+  </EntityType>
+  <Association Name="FK_Categ_supp_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Categ_supp" Type="Self.Categ_supp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Ca_id" />
+      </Principal>
+      <Dependent Role="Categ_supp">
+        <PropertyRef Name="Ca_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Categ_supp_Suppliers">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="Categ_supp" Type="Self.Categ_supp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="S_id" />
+      </Principal>
+      <Dependent Role="Categ_supp">
+        <PropertyRef Name="S_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cus_Category_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Cus_Category" Type="Self.Cus_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Ca_id" />
+      </Principal>
+      <Dependent Role="Cus_Category">
+        <PropertyRef Name="Ca_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cus_Category_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Cus_Category" Type="Self.Cus_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Cus_id" />
+      </Principal>
+      <Dependent Role="Cus_Category">
+        <PropertyRef Name="Ca_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cust_product_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="cust_product" Type="Self.cust_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Cus_id" />
+      </Principal>
+      <Dependent Role="cust_product">
+        <PropertyRef Name="Cus_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cust_product_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="cust_product" Type="Self.cust_product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="P_id" />
+      </Principal>
+      <Dependent Role="cust_product">
+        <PropertyRef Name="P_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cust_User_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="cust_User" Type="Self.cust_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Cus_id" />
+      </Principal>
+      <Dependent Role="cust_User">
+        <PropertyRef Name="Cus_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cust_User_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="cust_User" Type="Self.cust_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Userid" />
+      </Principal>
+      <Dependent Role="cust_User">
+        <PropertyRef Name="Userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_prod_supp_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="prod_supp" Type="Self.prod_supp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="P_id" />
+      </Principal>
+      <Dependent Role="prod_supp">
+        <PropertyRef Name="P_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_prod_supp_Suppliers">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="prod_supp" Type="Self.prod_supp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="S_id" />
+      </Principal>
+      <Dependent Role="prod_supp">
+        <PropertyRef Name="S_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Ca_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Ca_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_suppAddress_Suppliers">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="suppAddress" Type="Self.suppAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="S_id" />
+      </Principal>
+      <Dependent Role="suppAddress">
+        <PropertyRef Name="S_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PharmacytaskModelStoreContainer">
+    <EntitySet Name="Categ_supp" EntityType="Self.Categ_supp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cus_Category" EntityType="Self.Cus_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cust_product" EntityType="Self.cust_product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cust_User" EntityType="Self.cust_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="prod_supp" EntityType="Self.prod_supp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="suppAddress" EntityType="Self.suppAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Categ_supp_Category" Association="Self.FK_Categ_supp_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Categ_supp" EntitySet="Categ_supp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Categ_supp_Suppliers" Association="Self.FK_Categ_supp_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Categ_supp" EntitySet="Categ_supp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cus_Category_Category" Association="Self.FK_Cus_Category_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Cus_Category" EntitySet="Cus_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cus_Category_Customer" Association="Self.FK_Cus_Category_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Cus_Category" EntitySet="Cus_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cust_product_Customer" Association="Self.FK_cust_product_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="cust_product" EntitySet="cust_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cust_product_Product" Association="Self.FK_cust_product_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="cust_product" EntitySet="cust_product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cust_User_Customer" Association="Self.FK_cust_User_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="cust_User" EntitySet="cust_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cust_User_Users" Association="Self.FK_cust_User_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="cust_User" EntitySet="cust_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_prod_supp_Product" Association="Self.FK_prod_supp_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="prod_supp" EntitySet="prod_supp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_prod_supp_Suppliers" Association="Self.FK_prod_supp_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="prod_supp" EntitySet="prod_supp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_suppAddress_Suppliers" Association="Self.FK_suppAddress_Suppliers">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="suppAddress" EntitySet="suppAddress" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

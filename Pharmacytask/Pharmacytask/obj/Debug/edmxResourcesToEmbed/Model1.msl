@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PharmacytaskModelStoreContainer" CdmEntityContainer="PharmacytaskEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="PharmacytaskModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Ca_id" ColumnName="Ca_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="P_id" ColumnName="P_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cus_Category">
+      <EntityTypeMapping TypeName="PharmacytaskModel.Cus_Category">
+        <MappingFragment StoreEntitySet="Cus_Category">
+          <ScalarProperty Name="Ca_id" ColumnName="Ca_id" />
+          <ScalarProperty Name="Cus_id" ColumnName="Cus_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="PharmacytaskModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Cus_id" ColumnName="Cus_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PharmacytaskModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="P_id" ColumnName="P_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ParCode" ColumnName="ParCode" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="Ca_id" ColumnName="Ca_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suppAddresses">
+      <EntityTypeMapping TypeName="PharmacytaskModel.suppAddress">
+        <MappingFragment StoreEntitySet="suppAddress">
+          <ScalarProperty Name="S_id" ColumnName="S_id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="PharmacytaskModel.Supplier">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="S_id" ColumnName="S_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PharmacytaskModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="PharmacytaskModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Categ_supp" TypeName="PharmacytaskModel.Categ_supp" StoreEntitySet="Categ_supp">
+      <EndProperty Name="Category">
+        <ScalarProperty Name="Ca_id" ColumnName="Ca_id" />
+      </EndProperty>
+      <EndProperty Name="Suppliers">
+        <ScalarProperty Name="S_id" ColumnName="S_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="cust_product" TypeName="PharmacytaskModel.cust_product" StoreEntitySet="cust_product">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="Cus_id" ColumnName="Cus_id" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="P_id" ColumnName="P_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="cust_User" TypeName="PharmacytaskModel.cust_User" StoreEntitySet="cust_User">
+      <EndProperty Name="Customer">
+        <ScalarProperty Name="Cus_id" ColumnName="Cus_id" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="Userid" ColumnName="Userid" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="prod_supp" TypeName="PharmacytaskModel.prod_supp" StoreEntitySet="prod_supp">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="P_id" ColumnName="P_id" />
+      </EndProperty>
+      <EndProperty Name="Suppliers">
+        <ScalarProperty Name="S_id" ColumnName="S_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,75 @@
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe.config
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.pdb
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.SuggestedBindingRedirects.cache
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddNewUser.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Form1.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.MainScreen.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.NewProduct.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Properties.Resources.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.GenerateResource.cache
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CoreCompileInputs.cache
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.exe
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.pdb
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.dll
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.dll
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.xml
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.xml
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CopyComplete
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddCustomer.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Suppliers.resources
+E:\college of cs\second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.ProductList.resources
+E:\college of cs\Second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.CustomerList.resources
+E:\college of cs\Second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SuppliersList.resources
+E:\college of cs\Second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.AssemblyReference.cache
+E:\college of cs\Second year\2nd term\task oop\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SalesBills.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe.config
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.pdb
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.dll
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.dll
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.xml
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.xml
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.AssemblyReference.cache
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.SuggestedBindingRedirects.cache
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddCustomer.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddNewUser.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.CustomerList.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Form1.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.MainScreen.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.NewProduct.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.ProductList.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Properties.Resources.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SalesBills.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Suppliers.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SuppliersList.resources
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.GenerateResource.cache
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CoreCompileInputs.cache
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CopyComplete
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.exe
+E:\college of cs\Second year\2nd term\task oop\Project\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.pdb
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe.config
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.exe
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\Pharmacytask.pdb
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.dll
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.xml
+F:\Project -- final\Pharmacytask\Pharmacytask\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.AssemblyReference.cache
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.SuggestedBindingRedirects.cache
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddCustomer.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.AddNewUser.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.CustomerList.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Form1.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.MainScreen.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.NewProduct.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.ProductList.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Properties.Resources.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SalesBills.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.Suppliers.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.SuppliersList.resources
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.GenerateResource.cache
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CoreCompileInputs.cache
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.csproj.CopyComplete
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.exe
+F:\Project -- final\Pharmacytask\Pharmacytask\obj\Debug\Pharmacytask.pdb
