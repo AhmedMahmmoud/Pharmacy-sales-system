@@ -1,3 +1,4 @@
 # Pharmacy sales system
-- هذا المشروع يحتوي علي كود السي شارب وجميع ال Forms وايضا يحتوي علي مجلد به الصور المستخمة لعمل هذه ال Forms ويحتوي ايضا علي Database الخاصه به وايضا يوجد نسخه احتياطيه منها و جميع جمل ال SQL موجودة ايضا ويتميز هذا المشروع بأنه بسيط جدا جدا ويوجد ايضا العديد من قنوات اليوتيوب التي استعنت بها مثل Mohamed Ebrahim Saad
-- هذا المشروع بذل فيه جهد كبير مني أسال الله الله ان ينفعكم به ولا تنسوني من صالح دعائكم 
+## This project contains C# code and all the associated forms. It also includes a folder with the images used to create these forms, as well as the project's database and a backup copy of it. All SQL statements related to the project are also included. This project is extremely simple and there are many YouTube channels that were used as a reference, such as Mohamed Ebrahim Saad. I exerted a great deal of effort on this project, and I ask Allah to make it beneficial for you, and please do not forget me in your prayers.
+## يحتوي هذا المشروع على كود C # وجميع النماذج المرتبطة به. كما يشتمل على مجلد بالصور المستخدمة في إنشاء هذه النماذج ، بالإضافة إلى قاعدة بيانات المشروع ونسخة احتياطية منه. يتم أيضًا تضمين جميع عبارات SQL المتعلقة بالمشروع. هذا المشروع بسيط للغاية وهناك العديد من قنوات اليوتيوب التي تم استخدامها كمرجع مثل محمد إبراهيم سعد. لقد بذلت جهدا كبيرا في هذا المشروع ، وأسأل الله أن يفيدك ، وأرجو ألا تنسوني في دعائكم.
+
